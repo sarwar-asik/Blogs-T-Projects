@@ -71,7 +71,9 @@ const Navbar = () => {
               <h1 className="text-2xl font-semibold uppercase">
                 Sarwar Hossain
               </h1>
+              
             </Link>
+            
             {/* sm-----menubar */}
             <div className="flex items-center">
               <div

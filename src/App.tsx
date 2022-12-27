@@ -6,13 +6,16 @@ import Home from "./components/pages/Home/Home";
 import { Route } from "react-router";
 import Footer from "./components/shared/Footer/Footer";
 import Navbar from "./components/shared/Navbar/Navbar";
+import Theme from "./components/shared/theme/Theme";
 
 function App() {
   return (
     <div className="w-[90%] mx-auto relative">
-    <div className="">
-    <Navbar />
+      
+    <div className=" ">
+      <Theme/>
     </div>
+    <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
