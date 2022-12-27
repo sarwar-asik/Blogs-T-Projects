@@ -55,7 +55,10 @@ const Service = () => {
         <img
           src={service}
           alt=""
-          style={{ backgroundImage: `url(${servicebgs})` }}
+          style={{
+            backgroundImage: `url(${servicebgs})`,
+            
+          }}
         />
       </figure>
     </div>
