@@ -9,12 +9,16 @@ import Navbar from "./components/shared/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="w-">
-      <Navbar />
+    <div className="w-[90%] mx-auto">
+    <div className="">
+    <Navbar />
+    </div>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      <Footer />
+     <div className="">
+     <Footer />
+     </div>
     </div>
   );
 }

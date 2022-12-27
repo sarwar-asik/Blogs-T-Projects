@@ -1,0 +1,28 @@
+.btn-1 {
+  background-color: #ed3833;
+  padding: 8px 8px;
+  border-radius: 3px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  height: 48px;
+  width: 170px;
+
+}
+.btn-2{
+    padding: 8px 8px;
+    border-radius: 3px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border: 2px solid rgb(125, 125, 125);
+    height: 48px;
+    width: 170px;
+
+}
