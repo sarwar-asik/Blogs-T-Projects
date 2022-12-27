@@ -4,7 +4,7 @@ import "../../../customcsss/Custom.css";
 
 const Banner = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between  bg-slate-700 py-5 px-[30px]">
+    <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between  bg-slate-800 py-5 px-[30px] w-full z-0">
       <div className="text-white  py-[80px] ">
         <h5 className="lg:text-[24px]"> Personal Portfolio</h5>
         <h1 className="text-[34px] flex flex-col font-sans font-bold">

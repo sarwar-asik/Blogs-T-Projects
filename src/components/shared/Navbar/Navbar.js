@@ -33,7 +33,7 @@ const Navbar = () => {
   );
 
   return (
-    <div>
+    <div className="">
       <div className=" h-full ">
         {/* Code block starts */}
         <nav className=" shadow xl:block hidden">

@@ -26,3 +26,28 @@
     width: 170px;
 
 }
+.fonts{
+    color: 
+    #F07867;
+}
+.headings1{
+font-family: 'Sulphur Point';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+/* position: absolute; */
+/* left: 835px;
+top: 1152px; */
+/* line-height: 64px; */
+
+color: #333333;
+}
+.para1{
+    font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 160% */
+color: #333333;
+}
