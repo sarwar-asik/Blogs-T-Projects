@@ -10,7 +10,7 @@ import Theme from "./components/shared/theme/Theme";
 
 function App() {
   return (
-    <div className="w-[90%] mx-auto relative">
+    <div className=" mx-auto relative" style={{"maxWidth":'90%'}}>
       
     <div className=" ">
       <Theme/>

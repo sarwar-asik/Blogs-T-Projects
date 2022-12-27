@@ -23,7 +23,7 @@ const Banner = () => {
       </div>
       <div className=" lg:py-[80px] mr-0">
         <figure>
-          <img src={banner} alt="" />
+          <img className=" h-[400px]" src={banner} alt="" />
         </figure>
       </div>
     </div>
