@@ -9,7 +9,9 @@ import Service from '../service/Service';
 const Home = () => {
     return (
         <div className=''>
-            <Banner/>
+           <div className=" w-full ">
+           <Banner/>
+           </div>
             <About1></About1>
             <Service/>
             <Projects></Projects>

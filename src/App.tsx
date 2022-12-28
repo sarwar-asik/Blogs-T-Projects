@@ -12,7 +12,7 @@ import Questions from "./components/pages/questions/Questions";
 
 function App() {
   return (
-    <div className=" mx-auto relative" style={{"maxWidth":'90%'}}>
+    <div className="mx-auto  relative " style={{ "maxWidth":"90%"}}>
       <div className="">
     <Navbar />
       </div>

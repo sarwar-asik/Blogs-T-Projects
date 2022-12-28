@@ -4,13 +4,13 @@ import "../../../customcsss/Custom.css";
 
 const Banner = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between  bg-slate-800 py-5 px-[30px] w-full z-0">
+    <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between bg-slate-800 py-5 px-[30px] w-full z-10">
       <div className="text-white  py-[80px] ">
         <h5 className="lg:text-[24px]"> Personal Portfolio</h5>
         <h1 className="text-[34px] flex flex-col font-sans font-bold">
           <span> FRONTEND</span>
           <span> WEB DEVELOPER</span>
-        </h1>
+        </h1> 
         <p className="text-[16px]">
           Lorem ipsum dolor sit amet, consectetur adipisicing <br /> elit.
           Doloribus est, quia eos voluptas .

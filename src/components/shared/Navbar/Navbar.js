@@ -9,15 +9,16 @@ const Navbar = () => {
   const MenuItem = (
     <React.Fragment>
       <Link
-        onClick={() => setShow(!show)}
-        href="/"
-        className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
-      >
-        {" "}
+         to='/'
+         onClick={() => setShow(!show)}
+         href="/"
+         className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
+         >
+        
         Home
       </Link>
       <Link
-      to='/projects'
+       to='/projects'
         onClick={() => setShow(!show)}
         href="/login"
         className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
@@ -38,7 +39,7 @@ const Navbar = () => {
     <div className="">
       <div className=" h-full ">
         {/* Code block starts */}
-        <nav className=" shadow xl:block hidden w-full absolute top-0 z-10">
+        <nav className=" shadow xl:block hidden w-full bg-slate-800 z-40">
           <div className="mx-auto container px-6 py-2 xl:py-0">
             <div className="flex items-center justify-between w-full">
               {/* lg ---start */}
@@ -66,8 +67,8 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <nav className="">
-          <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center fix to-0 z-40 absolute top-0">
+        <nav className="bg-slate-800">
+          <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center z-40">
             <Link href="/" className="w-20">
               <h1 className="text-2xl text-white font-semibold uppercase">
                 Sarwar Hossain

@@ -36,7 +36,7 @@ const Projects = () => {
           const { name, img, image1, image2, live, source } = project;
           return (
             <div
-              className="projectbg relative projectbg"
+              className="projectBg "
               style={{
                 background: `linear-gradient(180deg, rgba(68, 175, 204, 0.0001) 0%, #44AFE0 100%), url(${image1})`,
               }}

@@ -11,6 +11,7 @@
   height: 48px;
   width: 170px;
   color: white;
+  margin: 10px 0px;
   transition: 2s opacity, 2s border, 1s background-color;
 }
 .btn-2 {
@@ -24,6 +25,7 @@
   text-align: center;
   border: 2px solid rgb(125, 125, 125);
   height: 48px;
+  margin: 10px 0px;
   width: 170px;
 }
 .btn-1:hover {
@@ -51,27 +53,33 @@
   /* or 160% */
   color: #333333;
 }
-.projectbg {
+
+.projectBg {
   width: 370px;
   height: 400px;
-
+  position: relative;
   border-radius: 3px;
 }
 
 .projectInfo {
-  display: flex;
-  gap: 10px;
+  display: none;
   position: absolute;
   top: 50%;
   left: 35%;
+  z-index: 30px;
+}
+
+.projectBg:hover .projectInfo {
+  display: flex;
+  gap: 10px;
 }
 
 .projectInfo a {
-  border: #b0acac 2px solid;
   padding: 10px;
   font-weight: 700;
   color: white;
   border-radius: 10px;
+  background-color: rgb(6, 132, 132);
   width: 70px;
 
   transition: 2s background-color;
