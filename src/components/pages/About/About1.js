@@ -4,7 +4,7 @@ import "../../../customcsss/Custom.css";
 
 const About1 = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 my-[34px] py-[15px] ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-[34px] py-[15px] ">
       <img src={banner1} alt="" />
       <div className="relative lg:px-[70px] px-[20px]">
         <h6 className="fonts"> About</h6>

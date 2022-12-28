@@ -9,6 +9,7 @@ import Navbar from "./components/shared/Navbar/Navbar";
 import Theme from "./components/shared/theme/Theme";
 import Projects from "./components/pages/projects/Projects";
 import Questions from "./components/pages/questions/Questions";
+import ProjectsRoutes from "./components/pages/projects/ProjectsRoutes";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects/>} />
+        <Route path="/projectRoutes" element={<ProjectsRoutes/>} />
       </Routes>
      <div className="">
      <Questions/>

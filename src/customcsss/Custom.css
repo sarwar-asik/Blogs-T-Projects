@@ -35,6 +35,8 @@
 }
 .fonts {
   color: #f07867;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 .headings1 {
   font-family: "Sulphur Point";
@@ -55,8 +57,9 @@
 }
 
 .projectBg {
-  width: 370px;
+  width: 80%;
   height: 400px;
+  /* margin: 0 auto; */
   position: relative;
   border-radius: 3px;
 }

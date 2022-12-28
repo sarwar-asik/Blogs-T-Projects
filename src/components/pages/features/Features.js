@@ -41,7 +41,7 @@ const Features = () => {
         </p>
         <p>And I also service dolor sit, amet consectetur adipisicing.</p>
       </header>
-      <main className="my-4 grid grid-cols-1 gap-[15px] md:grid-cols-2 lg:grid-cols-3 mt-4 mb-5">
+      <main className="my-4 grid  grid-cols-1 gap-[15px] md:grid-cols-2 lg:grid-cols-3 mt-4 mb-5">
         {features.map((feature) => {
           const { name, img, detail, color } = feature;
 

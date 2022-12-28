@@ -12,23 +12,23 @@ const Navbar = () => {
          to='/'
          onClick={() => setShow(!show)}
          href="/"
-         className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
+         className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium   px-5 py-2 text-xs"
          >
         
         Home
       </Link>
       <Link
-       to='/projects'
+       to='/projectRoutes'
         onClick={() => setShow(!show)}
         href="/login"
-        className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
+        className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
       >
         Projects
       </Link>
       <Link
         onClick={() => setShow(!show)}
         href="/blog"
-        className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
+        className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
       >
         Blogs
       </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 {/* lg------end-section ------- */}
                 <div className="hidden xl:flex items-center ">
                   <div className="relative md:mr-6 my-2">
-                    <button className="focus:outline-none  border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-600 rounded text-gray-100 px-5 py-2 text-xs">
+                    <button className="focus:outline-none  border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium text-gray-100 px-5 py-2 text-xs">
                       Contact
                     </button>
                   </div>

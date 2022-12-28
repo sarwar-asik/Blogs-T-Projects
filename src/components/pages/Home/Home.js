@@ -11,6 +11,7 @@ const Home = () => {
         <div className=''>
            <div className=" w-full ">
            <Banner/>
+          
            </div>
             <About1></About1>
             <Service/>
