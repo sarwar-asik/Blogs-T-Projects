@@ -11,21 +11,22 @@ const Navbar = () => {
       <Link
         onClick={() => setShow(!show)}
         href="/"
-        className=" pr-[25px] focus:outline-none bg-gray-100 border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-300 rounded text-gray-600 px-5 py-2 text-xs"
+        className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
       >
+        {" "}
         Home
       </Link>
       <Link
         onClick={() => setShow(!show)}
         href="/login"
-        className=" pr-[25px] focus:outline-none bg-gray-100 border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-300 rounded text-gray-600 px-5 py-2 text-xs"
+        className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
       >
         PortFolio
       </Link>
       <Link
         onClick={() => setShow(!show)}
         href="/blog"
-        className=" pr-[25px] focus:outline-none bg-gray-100 border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-300 rounded text-gray-600 px-5 py-2 text-xs"
+        className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
       >
         Blogs
       </Link>
@@ -36,27 +37,26 @@ const Navbar = () => {
     <div className="">
       <div className=" h-full ">
         {/* Code block starts */}
-        <nav className=" shadow xl:block hidden">
+        <nav className=" shadow xl:block hidden w-full absolute top-0">
           <div className="mx-auto container px-6 py-2 xl:py-0">
-            <div className="flex items-center justify-between">
-            
+            <div className="flex items-center justify-between w-full">
               {/* lg ---start */}
-              <div className="flex w-full sm:w-auto items-center sm:items-stretch justify-end sm:justify-start">
-                <Link href={"/"} className="flex items-center">
-                  <h2 className="hidden sm:block text-3xl text-gray-700 font-bold leading-normal pl-3">
+              <div className="">
+                <Link href={"/"} className="">
+                  <h2 className="hidden sm:block text-3xl text-gray-200 font-bold leading-normal pl-3">
                     SHA
                   </h2>
                 </Link>
               </div>
               {/* lg ----- items ----- */}
               <div className="flex">
-                <div className="hidden xl:flex items-center gap-2 md:mr-6 xl:mr-16">
+                <div className="hidden xl:flex items-center gap-2 md:mr-6 xl:mr-16 text-white">
                   {MenuItem}
                 </div>
                 {/* lg------end-section ------- */}
                 <div className="hidden xl:flex items-center ">
                   <div className="relative md:mr-6 my-2">
-                    <button className="focus:outline-none bg-gray-100 border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-300 rounded text-gray-600 px-5 py-2 text-xs">
+                    <button className="focus:outline-none  border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-600 rounded text-gray-100 px-5 py-2 text-xs">
                       Contact
                     </button>
                   </div>
@@ -65,17 +65,16 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <nav>
-          <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fix to-0 z-40">
+        <nav className="">
+          <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center fix to-0 z-40 absolute top-0">
             <Link href="/" className="w-20">
-              <h1 className="text-2xl font-semibold uppercase">
+              <h1 className="text-2xl text-white font-semibold uppercase">
                 Sarwar Hossain
               </h1>
-              
             </Link>
-            
+
             {/* sm-----menubar */}
-            <div className="flex items-center">
+            <div className="flex items-center  p-2 ">
               <div
                 id="menu"
                 className="text-gray-800"
@@ -87,8 +86,11 @@ const Navbar = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-menu-2"
-                    width={24}
-                    height={24}
+                    width={42}
+                    height={42}
+                    
+                    style={{"border":"2px solid white","padding":"3px 3px","borderRadius":"60px","fontSize":"40px"}}
+                    color="white"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
@@ -96,7 +98,7 @@ const Navbar = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"  />
                     <line x1={4} y1={6} x2={20} y2={6} />
                     <line x1={4} y1={12} x2={20} y2={12} />
                     <line x1={4} y1={18} x2={20} y2={18} />
@@ -155,14 +157,11 @@ const Navbar = () => {
                     </div>
                     {/* sm------nav---middle  Item */}
                     <ul className="f-m-m ">
-                      <li className="flex flex-col mt-[30px] gap-2">
+                      <li className="flex flex-col mt-[30px] gap-2 text-black ">
                         {MenuItem}
                       </li>
                     </ul>
                   </div>
-
-               
-             
                 </div>
               </div>
             </div>

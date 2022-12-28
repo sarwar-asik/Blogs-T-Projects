@@ -11,10 +11,7 @@ import Theme from "./components/shared/theme/Theme";
 function App() {
   return (
     <div className=" mx-auto relative" style={{"maxWidth":'90%'}}>
-      
-    <div className=" ">
-      <Theme/>
-    </div>
+    
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

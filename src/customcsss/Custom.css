@@ -11,42 +11,56 @@
   height: 48px;
   width: 170px;
   color: white;
-
+  transition: opacity 1s ease, border 1s ease, background-color 500ms;
 }
-.btn-2{
-    padding: 8px 8px;
-    border-radius: 3px;
-    font-family: "Public Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    border: 2px solid rgb(125, 125, 125);
-    height: 48px;
-    width: 170px;
-
+.btn-2 {
+  padding: 8px 8px;
+  border-radius: 3px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: 2px solid rgb(125, 125, 125);
+  height: 48px;
+  width: 170px;
 }
-.fonts{
-    color: 
-    #F07867;
-    
+.btn-1:hover {
+  opacity: 0.7;
+  background-color: #333333;
+  border: 2px solid rgb(125, 125, 125);
 }
-.headings1{
-font-family: 'Sulphur Point';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-
-
-color: #333333;
+.fonts {
+  color: #f07867;
 }
-.para1{
-    font-family: 'Public Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 25px;
-/* or 160% */
-color: #333333;
+.headings1 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+
+  color: #333333;
+}
+.para1 {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 160% */
+  color: #333333;
+}
+.projectbg {
+  /* position: absolute; */
+  width: 370px;
+  /* height: 400px; */
+  /* left: 200px; */
+  /* top: 100px; */
+  background: linear-gradient(
+    180deg,
+    rgba(68, 175, 224, 0.0001) 0%,
+    #44afe0 100%
+  );
+  border-radius: 3px;
 }

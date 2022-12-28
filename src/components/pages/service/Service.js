@@ -4,8 +4,8 @@ import servicebgs from "../../../assets/servicebg.png";
 
 const Service = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 my-[34px] py-[15px] lg:px-[70px] px-[20px]">
-      <div className=" ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 my-[34px] py-[15px] lg:px-[70px] px-[25px]">
+      <div className="">
         <h6 className="fonts"> Service </h6>
         <h2 className="headings1">Responsived & </h2>
         <h2 className="headings1"> Sequired Website</h2>
@@ -21,7 +21,7 @@ const Service = () => {
             <input
               type="checkbox"
               checked="checked"
-              className="rounded   p-2 bg-info text-white"
+              className="rounded    bg-info text-white"
             />
             <span> Responsive website with uniq design and develop.</span>
           </p>
