@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const Projects = () => {
@@ -16,7 +17,7 @@ const Projects = () => {
         setprojects(data);
       });
   }, []);
-  // console.log(projects ,"projects.......");
+  //   console.log(projects ,"projects.......");
 
   return (
     <div className="px-[25px] my-[30px]">
@@ -32,13 +33,12 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[50px]">
         {projects?.map((project) => {
-          const { name, img, image1, live, source } = project;
+          const { name, img, image1, image2, live, source } = project;
           return (
             <div
-              className=" relative"
+              className="projectbg relative projectbg"
               style={{
-                backgroundImage: `url(${img})`,
-                backgroundRepeat: "no-repeat",
+                background: `linear-gradient(180deg, rgba(68, 175, 204, 0.0001) 0%, #44AFE0 100%), url(${image1})`,
               }}
             >
               <div className="absolute bottom-[20px] left-3 ">
@@ -48,6 +48,14 @@ const Projects = () => {
                 >
                   {name ? name : "Simple Project"}
                 </h5>
+              </div>
+              <div className="projectInfo ">
+                <a href={live} target="_blank">
+                  Live
+                </a>
+                <a href={source} target="_blank">
+                  Source
+                </a>
               </div>
             </div>
           );

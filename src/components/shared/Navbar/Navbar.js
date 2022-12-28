@@ -17,11 +17,12 @@ const Navbar = () => {
         Home
       </Link>
       <Link
+      to='/projects'
         onClick={() => setShow(!show)}
         href="/login"
         className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded  px-5 py-2 text-xs"
       >
-        PortFolio
+        Projects
       </Link>
       <Link
         onClick={() => setShow(!show)}
@@ -37,7 +38,7 @@ const Navbar = () => {
     <div className="">
       <div className=" h-full ">
         {/* Code block starts */}
-        <nav className=" shadow xl:block hidden w-full absolute top-0">
+        <nav className=" shadow xl:block hidden w-full absolute top-0 z-10">
           <div className="mx-auto container px-6 py-2 xl:py-0">
             <div className="flex items-center justify-between w-full">
               {/* lg ---start */}

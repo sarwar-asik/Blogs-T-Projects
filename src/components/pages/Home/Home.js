@@ -3,6 +3,7 @@ import About1 from '../About/About1';
 import Banner from '../banner/Banner';
 import Features from '../features/Features';
 import Projects from '../projects/Projects';
+import Questions from '../questions/Questions';
 import Service from '../service/Service';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Service/>
             <Projects></Projects>
             <Features/>
+         
         
             
         </div>
