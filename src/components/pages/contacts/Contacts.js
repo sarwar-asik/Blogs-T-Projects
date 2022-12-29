@@ -29,22 +29,25 @@ const Contacts = () => {
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 my-5">
         <aside className=" p-3 shadow-lg">
-          <h1 className="headings1"> Message Me , </h1>
+          <h1 className="headings1"> Message Me </h1>
           <form onSubmit={sendMessage} action="">
             <input
               className="input input-bordered input-info my-3 w-full"
               name="name"
               type="text"
+              placeholder="Your Name "
             />
 
             <input
               className="input input-bordered input-info my-3 w-full"
               name="email"
               type="email"
+              placeholder="Your Email "
             />
             <textarea
-              className="w-full input-bordered input-info "
+              className="w-full textarea textarea-info "
               name="message"
+              placeholder="Write Your Message ...."
               id=""
               cols="30"
               rows="10"

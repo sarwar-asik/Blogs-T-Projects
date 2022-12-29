@@ -5,11 +5,12 @@ import "../../../customcsss/Custom.css";
 import bannerPhoto from "../../../assets/professional-removebg-preview.png";
 import bannerLeft from "../../../assets/BannerLeft.png";
 import bannerRight from "../../../assets/BannerRight.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 justify-between bg-slate-800 py-5 px-[30px] w-full z-10 ">
-      <div  className="text-white  py-[80px] ">
+      <div className="text-white  py-[80px] ">
         <h5 className="lg:text-[24px]"> Personal Portfolio</h5>
         <h1 className="text-[34px] flex flex-col font-sans font-bold">
           <span> FRONTEND</span>
@@ -20,15 +21,14 @@ const Banner = () => {
           Doloribus est, quia eos voluptas .
         </p>
         <p className="flex gap-3 my-[8px]">
-          <button className="btn-1">About</button>
+          <Link to="/contacts">
+            <button className="btn-1">About </button>
+          </Link>
 
           <button className="btn-2">Learn More</button>
         </p>
       </div>
-      <div
-       
-        className="h-[300px] w-[80%] bg-[#F6B443] rounded-[20px] py-[40px] relative  lg:py-[80px] mt-[50px]"
-      >
+      <div className="h-[300px] w-[80%] bg-[#F6B443] rounded-[20px] py-[40px] relative  lg:py-[80px] mt-[50px]">
         <div className=" absolute bottom-0 w-full ">
           <img
             className="h-[390px]  w-[60%] mx-auto"

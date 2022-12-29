@@ -18,7 +18,7 @@ import Contacts from "./components/pages/contacts/Contacts";
 
 function App() {
   return (
-    <div className="mx-auto  relative " style={{ "maxWidth":"90%"}}>
+    <div className="mx-auto  relative " style={{ "maxWidth":"95%"}}>
       <div className="">
     <Navbar />
       </div>
