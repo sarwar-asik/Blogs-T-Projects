@@ -9,25 +9,25 @@ const Navbar = () => {
   const MenuItem = (
     <React.Fragment>
       <Link
-         to='/'
-         onClick={() => setShow(!show)}
-         href="/"
-         className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium   px-5 py-2 text-xs"
-         >
-        
+        to="/"
+        onClick={() => setShow(!show)}
+        href="/"
+        className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium   px-5 py-2 text-xs"
+      >
         Home
       </Link>
       <Link
-       to='/projectRoutes'
+        to="/projectRoutes"
         onClick={() => setShow(!show)}
-        href="/login"
+        href="/projectRoutes"
         className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
       >
         Projects
       </Link>
       <Link
+        to="/blogs"
         onClick={() => setShow(!show)}
-        href="/blog"
+        href="/blogs"
         className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
       >
         Blogs
@@ -56,20 +56,20 @@ const Navbar = () => {
                   {MenuItem}
                 </div>
                 {/* lg------end-section ------- */}
-                <div className="hidden xl:flex items-center ">
+                <Link to="/contacts" className="hidden xl:flex items-center ">
                   <div className="relative md:mr-6 my-2">
                     <button className="focus:outline-none  border-gray-300 border transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium text-gray-100 px-5 py-2 text-xs">
                       Contact
                     </button>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
         </nav>
         <nav className="bg-slate-800">
           <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center z-40">
-            <Link href="/" className="w-20">
+            <Link to="/" href="/" className="w-20">
               <h1 className="text-2xl text-white font-semibold uppercase">
                 Sarwar Hossain
               </h1>
@@ -90,8 +90,12 @@ const Navbar = () => {
                     className="icon icon-tabler icon-tabler-menu-2"
                     width={42}
                     height={42}
-                    
-                    style={{"border":"2px solid white","padding":"3px 3px","borderRadius":"60px","fontSize":"40px"}}
+                    style={{
+                      border: "2px solid white",
+                      padding: "3px 3px",
+                      borderRadius: "60px",
+                      fontSize: "40px",
+                    }}
                     color="white"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
@@ -100,7 +104,7 @@ const Navbar = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"  />
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <line x1={4} y1={6} x2={20} y2={6} />
                     <line x1={4} y1={12} x2={20} y2={12} />
                     <line x1={4} y1={18} x2={20} y2={18} />
@@ -122,7 +126,7 @@ const Navbar = () => {
               className="bg-gray-800 opacity-50 w-full h-full"
               onClick={() => setShow(!show)}
             />
-            <div className="w-64 z-40 fixed overflow-y-auto top-0 bg-white shadow h-[100%] flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out  ">
+            <div className="w-64 z-40 fixed overflow-y-auto top-0 bg-slate-300 shadow h-[100%] flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out  ">
               <div className="px-6 h-full">
                 <div className="flex flex-col justify-between h-full w-full">
                   <div>
@@ -159,8 +163,16 @@ const Navbar = () => {
                     </div>
                     {/* sm------nav---middle  Item */}
                     <ul className="f-m-m ">
-                      <li className="flex flex-col mt-[30px] gap-2 text-black ">
+                      <li className="flex flex-col mt-[30px] gap-2 text-black bg-slate-300 rounded-md">
                         {MenuItem}
+                        <Link
+                          to="/contacts"
+                          onClick={() => setShow(!show)}
+                          href="/blogs"
+                          className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
+                        >
+                          Contacts
+                        </Link>
                       </li>
                     </ul>
                   </div>

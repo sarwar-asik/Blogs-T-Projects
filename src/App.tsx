@@ -12,6 +12,8 @@ import Questions from "./components/pages/questions/Questions";
 import ProjectsRoutes from "./components/pages/projects/ProjectsRoutes";
 import { ToastContainer } from "react-toastify";
 import DetailProjects from "./components/pages/detailProjects/DetailProjects";
+import Blogs from "./components/pages/blogs/Blogs";
+import Contacts from "./components/pages/contacts/Contacts";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path="/projects" element={<Projects/>} />
         <Route path="/projectRoutes" element={<ProjectsRoutes/>} />
         <Route path="/projectDetails/:name" element={<DetailProjects/>} />
+        <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/contacts" element={<Contacts/>} />
       </Routes>
      <div className="">
      <Questions/>

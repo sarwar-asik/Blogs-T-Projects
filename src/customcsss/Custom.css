@@ -56,7 +56,7 @@
 }
 
 .projectBg {
-  width: 90%;
+  width: 95%;
   height: 380px;
   /* margin: 0 auto; */
   position: relative;
@@ -81,7 +81,7 @@
   font-weight: 700;
   color: white;
   border-radius: 10px;
-  background-color: rgb(6, 132, 132);
+  background-color: rgb(26, 201, 201);
   width: 70px;
 
   transition: 2s background-color;
@@ -90,4 +90,5 @@
 .projectInfo a:hover {
   background-color: #ed3833;
   border: none;
+  
 }
