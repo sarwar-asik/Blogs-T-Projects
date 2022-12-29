@@ -10,6 +10,9 @@ import Theme from "./components/shared/theme/Theme";
 import Projects from "./components/pages/projects/Projects";
 import Questions from "./components/pages/questions/Questions";
 import ProjectsRoutes from "./components/pages/projects/ProjectsRoutes";
+import { ToastContainer } from "react-toastify";
+import DetailProjects from "./components/pages/detailProjects/DetailProjects";
+
 
 function App() {
   return (
@@ -21,11 +24,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/projectRoutes" element={<ProjectsRoutes/>} />
+        <Route path="/projectDetails/:name" element={<DetailProjects/>} />
       </Routes>
      <div className="">
      <Questions/>
      <Footer />
      </div>
+     <ToastContainer />
     </div>
   );
 }

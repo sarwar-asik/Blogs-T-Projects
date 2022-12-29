@@ -5,6 +5,8 @@ import Features from '../features/Features';
 import Projects from '../projects/Projects';
 import Questions from '../questions/Questions';
 import Service from '../service/Service';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Home = () => {
     return (

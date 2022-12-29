@@ -16,8 +16,8 @@ const Questions = () => {
           <br /> Ipsum dolor sit amet consectetur
         </p>
         <p className=" flex gap-3 my-[8px] z-10">
-          <button className="btn-1">Connect</button>
-          <button className="btn-2">About</button>
+          <button className="h-[40px] px-8 bg-[#ed3833] text-white">Connect</button>
+          <button className="h-[40px] px-8 bg-[#262424] text-white">About</button>
         </p>
       </div>
 

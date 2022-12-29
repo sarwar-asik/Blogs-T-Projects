@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title">Newsletter</span>
-          <div className="form-control w-80">
+          <div className="form-control sm:w-45 lg:w-70 ">
             <label className="label">
               <span className="label-text text-primary">
                 Enter your email address
@@ -36,7 +36,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="username@site.com"
-                className="input input-bordered w-full pr-16"
+                className="input input-bordered w-full pr-10"
               />
               <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
                 Send Message
