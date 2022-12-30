@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const [show, setShow] = useState(null);
+  const [show, setShow] = useState(null || false);
   const [profile, setProfile] = useState(false);
   const [product, setProduct] = useState(false);
   const [deliverables, setDeliverables] = useState(false);
@@ -11,7 +11,6 @@ const Navbar = () => {
       <Link
         to="/"
         onClick={() => setShow(!show)}
-        href="/"
         className=" pr-[25px] focus:outline-none transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium   px-5 py-2 text-xs"
       >
         Home
@@ -19,7 +18,6 @@ const Navbar = () => {
       <Link
         to="/projectRoutes"
         onClick={() => setShow(!show)}
-        href="/projectRoutes"
         className=" pr-[25px] focus:outline-none  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
       >
         Projects
@@ -27,7 +25,6 @@ const Navbar = () => {
       <Link
         to="/blogs"
         onClick={() => setShow(!show)}
-        href="/blogs"
         className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
       >
         Blogs
@@ -44,7 +41,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full">
               {/* lg ---start */}
               <div className="">
-                <Link href={"/"} className="">
+                <Link to="/" className="">
                   <h2 className="hidden sm:block text-3xl text-gray-200 font-bold leading-normal pl-3">
                     SHA
                   </h2>
@@ -69,7 +66,7 @@ const Navbar = () => {
         </nav>
         <nav className="bg-slate-800">
           <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center z-40">
-            <Link to="/" href="/" className="w-20">
+            <Link to="/" className="w-20">
               <h1 className="text-2xl text-white font-semibold uppercase">
                 Sarwar Hossain
               </h1>
@@ -168,7 +165,6 @@ const Navbar = () => {
                         <Link
                           to="/contacts"
                           onClick={() => setShow(!show)}
-                          href="/blogs"
                           className=" pr-[25px] focus:outline-none -gray-300  transition duration-150 ease-in-out hover:bg-gray-600 rounded font-medium  px-5 py-2 text-xs"
                         >
                           Contacts

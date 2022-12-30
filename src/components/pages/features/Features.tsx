@@ -46,13 +46,13 @@ const Features = () => {
           const { name, img, detail, color } = feature;
 
           return (
-            <div class="card text-start  p-2 h-[230px]">
-              <figures
+            <div className="card text-start  p-2 h-[230px]">
+              <figure
                 className={` h-[50px] w-[50px]  text-center p-2 rounded-[50%] `}
                 style={{ backgroundColor: `${color}` }}
               >
-                <img class="h-[30px] w-[30px]" src={img} alt="Title" />
-              </figures>
+                <img className="h-[30px] w-[30px]" src={img} alt="Title" />
+              </figure>
               <h1 className="font-semibold">{name}</h1>
               <p className="para1">
                 {detail} <br /> Lorem ipsum dolor sit amet consectetur . <br />

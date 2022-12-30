@@ -52,7 +52,7 @@ const DetailProjects = () => {
           <div className="">
             <p className="fonts my-3"> Used Technology ::: </p>
             <p className=" flex gap-5">
-              {tech?.map((tec) => (
+              {tech?.map((tec: string) => (
                 <img
                   className="h-[54px] rounded-[50%] p-1 w-[54px] bg-slate-800"
                   src={tec}

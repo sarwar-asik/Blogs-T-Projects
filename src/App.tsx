@@ -15,26 +15,25 @@ import DetailProjects from "./components/pages/detailProjects/DetailProjects";
 import Blogs from "./components/pages/blogs/Blogs";
 import Contacts from "./components/pages/contacts/Contacts";
 
-
 function App() {
   return (
-    <div className="mx-auto  relative " style={{ "maxWidth":"95%"}}>
+    <div className="mx-auto  relative " style={{ maxWidth: "95%" }}>
       <div className="">
-    <Navbar />
+        <Navbar />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/projectRoutes" element={<ProjectsRoutes/>} />
-        <Route path="/projectDetails/:name" element={<DetailProjects/>} />
-        <Route path="/blogs" element={<Blogs/>} />
-        <Route path="/contacts" element={<Contacts/>} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projectRoutes" element={<ProjectsRoutes />} />
+        <Route path="/projectDetails/:name" element={<DetailProjects />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
-     <div className="">
-     <Questions/>
-     <Footer />
-     </div>
-     <ToastContainer />
+      <div className="">
+        <Questions />
+        <Footer />
+      </div>
+      <ToastContainer />
     </div>
   );
 }

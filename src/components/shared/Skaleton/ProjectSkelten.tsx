@@ -7,7 +7,7 @@ const ProjectSkelten = () => {
       role="status"
       className="rounded  shadow animate-pulse grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
     >
-      {[...Array(3).keys()].map((index, number) => {
+      {[1,2,3].map(( number)=>{
         return (
           <div className="flex flex-col justify-center items-center bg-gray-300 rounded dark:bg-gray-700 relative projectBg">
             <div className=" flex gap-10">

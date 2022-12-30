@@ -6,7 +6,7 @@ import profile from "../../../assets/professional-removebg-preview.png";
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contacts = () => {
-  const sendMessage = (event) => {
+  const sendMessage = (event: any) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
@@ -49,14 +49,14 @@ const Contacts = () => {
               name="message"
               placeholder="Write Your Message ...."
               id=""
-              cols="30"
-              rows="10"
+              cols={30}
+              rows={5}
             ></textarea>
             <input className="btn-1" type="submit" value="Send " />
           </form>
         </aside>
 
-        <aside2 className="py-[200px] bg-info px-3 rounded-lg">
+        <aside className="py-[200px] bg-info px-3 rounded-lg">
           <header className="flex justify-between items-center text-6xl text-white font-serif">
             <h1>
               {" "}
@@ -80,19 +80,31 @@ const Contacts = () => {
               </p>
             </p>
             <p className=" flex gap-3 mt-8 text-3xl">
-              <a href="https://www.facebook.com/profile.php?id=100087624802395" className="text-white shadow-lg p-2" target={'_blank'}>
+              <a
+                href="https://www.facebook.com/profile.php?id=100087624802395"
+                className="text-white shadow-lg p-2"
+                target={"_blank"}
+              >
                 <FaFacebook />
               </a>
-              <a href="https://www.linkedin.com/in/sarwar-hossain-a29660257/" className="text-white shadow-lg p-2" target={'_blank'}>
+              <a
+                href="https://www.linkedin.com/in/sarwar-hossain-a29660257/"
+                className="text-white shadow-lg p-2"
+                target={"_blank"}
+              >
                 <FaLinkedinIn />
               </a>
 
-              <a href="https://github.com/sarwar-asik" className="text-slate-500 shadow-lg p-2" target={'_blank'}>
+              <a
+                href="https://github.com/sarwar-asik"
+                className="text-slate-500 shadow-lg p-2"
+                target={"_blank"}
+              >
                 <FaGithub />
               </a>
             </p>
           </div>
-        </aside2>
+        </aside>
       </section>
     </div>
   );

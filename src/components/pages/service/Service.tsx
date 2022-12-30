@@ -20,7 +20,7 @@ const Service = () => {
           <p className="flex gap-2  text-sm text-slate-400">
             <input
               type="checkbox"
-              checked="checked"
+              
               className="rounded    bg-info text-white"
             />
             <span> Responsive website with uniq design and develop.</span>
@@ -28,7 +28,7 @@ const Service = () => {
           <p className="flex gap-2  text-sm text-slate-400">
             <input
               type="checkbox"
-              checked="checked"
+              checked={true}
               className="rounded checkbox-accent p-2 bg-info text-white"
             />
             <span> Used React components in website</span>
@@ -36,7 +36,7 @@ const Service = () => {
           <p className="flex gap-2  text-sm text-slate-400">
             <input
               type="checkbox"
-              checked="checked"
+              checked={true}
               className="rounded  p-2 bg-info text-white"
             />
             <span> SEO optimization optimization.</span>
@@ -44,7 +44,7 @@ const Service = () => {
           <p className="flex gap-2 text-sm text-slate-400">
             <input
               type="checkbox"
-              checked="checked"
+              checked={true}
               className="rounded  p-2 bg-info text-white"
             />
             <span>Sequired private routes </span>
@@ -57,7 +57,6 @@ const Service = () => {
           alt=""
           style={{
             backgroundImage: `url(${servicebgs})`,
-            
           }}
         />
       </figure>
