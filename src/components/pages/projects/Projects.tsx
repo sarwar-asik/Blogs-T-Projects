@@ -68,10 +68,10 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="projectInfo ">
-                  <a href={live} target="_blank">
+                  <a href={live} rel="noreferrer"  target="_blank">
                     Live
                   </a>
-                  <a href={source} target="_blank">
+                  <a href={source} rel="noreferrer"  target="_blank">
                     Source
                   </a>
                 </div>
@@ -80,7 +80,7 @@ const Projects = () => {
           })}
         </section>
       ) : (
-        <ProjectSkelten></ProjectSkelten>
+        <ProjectSkelten projects={projects}></ProjectSkelten>
       )}
       <footer className="flex text-center gap-3 my-12 justify-center items-center ">
         <button className="h-[38px] w-[38px] text-white font-semibold bg-[#ED3833] ">
